@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="income.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Joti+One&display=swap" 
+    rel="stylesheet">
+    <title>Income Tracker </title>
+</head>
+<body>
+    <header class="header">
+        
+        <a class="logo" href="home_old.html">Wealth <img src="pic1.png" width="40" height="40" border-radius="50%" ><span>Whiz</span> 
+                
+        </a> 
+        
+        
+        
+        <div class="navbar">
+
+        <nav>
+            <a href="newdash.html">Dashboard</a>
+            <a href="income.html">Income</a>
+            <a href="expense.html">Expense</a>
+            <a href="newdash.html">Budget</a>
+            <a href="LogoutOld.html">Log Out</a>
+        </nav>
+        </div>
+
+    </header>
+    <div class="lower">
+    <h1>Incomes</h1>
+    <div class="input-section">
+    <div class="cat">
+        <div class="left">
+        <label for="category-select">Category:</label><br/><br/>
+        <select id="category-select">
+            <option value="Salary">Salary</option>
+            <option value="Overtime Pay (OT)">Overtime Pay (OT)</option>
+            <option value="Bonuses">Bonuses</option>
+            <option value="Royalties">Royalties</option>
+            <option value="Rental Income">Rental Income</option>
+            <option value="Interest Income">Interest Income</option>
+            <option value="Commissions">Commissions</option>
+        </select>
+        </div>   
+
+        <div class="right">
+        <label for="amount-input">Amount:</label><br/><br/>
+        <input type="number" id="amount-input">
+        </div>
+
+    </div>
+
+        <div class="cat3">
+        <label for="date-input">Date:</label><br/>
+        <input type="date" id="date-input">
+        <button id="add-btn">Add</button>
+        </div>
+        </div>
+
+    </div>
+    <div class="expenses-list">
+        <h2>Income List</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expnese-table-body">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </div>
+    <script src="expense.js"></script>
+</body>
+</html>
